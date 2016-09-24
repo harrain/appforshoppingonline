@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1d5d5"
+    android:orientation="vertical" >
+
+    <!-- 标题栏头部 -->
+
+
+
+    <!-- 用户名部分 -->
+
+    <LinearLayout
+        android:id="@+id/person_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+
+
+        <EditText
+            android:id="@+id/person_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/person_edit_text"
+            android:hint="@string/et_name" />
+    </LinearLayout>
+
+    <!-- 密码部分 -->
+
+    <LinearLayout
+        android:id="@+id/person_layout_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+
+        <EditText
+            android:id="@+id/person_et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/person_edit_text"
+            android:hint="@string/et_pwd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/person_layout_depwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+
+        <EditText
+            android:id="@+id/person_et_depwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/person_edit_text"
+            android:hint="@string/et_depwd" />
+    </LinearLayout>
+    <!-- 两个按钮 -->
+    <LinearLayout
+        android:id="@+id/person_layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <Button
+            android:id="@+id/person_btn_register"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#aaadee"
+            android:textSize="25sp"
+            android:layout_height="50dp"
+            android:textColor="@android:color/white"
+            android:text="@string/btn_register" />
+    </LinearLayout>
+
+</LinearLayout>
